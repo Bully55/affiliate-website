@@ -1,0 +1,118 @@
+@import "styles/vars"
+
+main.v-contacts
+    background: $colorMain
+
+    div.cont-flex
+        display: flex
+        justify-content: flex-start
+        padding-bottom: 100px
+        padding: 0 15px 50px 15px
+        +media(1600px)
+            justify-content: center
+
+    form.cont-form
+        color: $textMain
+        min-width: 625px
+        +media(680px)
+            width: 100%
+            min-width: auto
+
+    div.form-bottom
+        display: flex
+        justify-content: center
+
+    button.form-btn
+        color: $textMain
+        text-align: center
+        min-width: 220px
+        border-radius: 60px
+        padding: 20px 10px
+        font-size: 22px
+        cursor: pointer
+        border: 1px solid $colorAccent
+        background: $colorAccent
+        &:hover
+            background: rgba(0,0,0,0)
+            border-color: $textMain
+
+    div.contact-right
+        position: relative
+        +media(1600px)
+            display: none
+
+    img.contacts-path-img
+        position: absolute
+        max-width: 334px
+        max-height: 357px
+        top: 115px
+        left: 485px
+        z-index: 3
+        animation: 5s pathLevitation infinite
+
+    img.contacts-path1-img
+        position: absolute
+        max-width: 416px
+        max-height: 384px
+        top: 460px
+        left: 430px
+        z-index: 1
+        animation: 5s path1Levitation infinite
+
+    img.contacts-circle-img
+        position: absolute
+        max-width: 415px
+        max-height: 512px
+        top: 250px
+        left: 360px
+        z-index: 2
+        animation: 3s circleLevitation infinite
+
+    img.contacts-lines-img
+        position: absolute
+        max-width: 589px
+        max-height: 825px
+        top: 100px
+        left: 200px
+        // animation: 5s circleLevitation 1s linear infinite
+
+    img.contacts-dotes-img
+        position: absolute
+        max-width: 330px
+        max-height: 330px
+        top: 300px
+        left: 600px
+        z-index: 2
+        animation: 3,5s dotesLevitation infinite
+
+@keyframes circleLevitation
+    0%
+        transform: translateY(0)
+    50%
+        transform: translateY(50px)
+    100%
+        transform: translateY(0)
+
+@keyframes pathLevitation
+    0%
+        transform: translateY(0)
+    50%
+        transform: translateY(50px)
+    100%
+        transform: translateY(0)
+
+@keyframes path1Levitation
+    0%
+        transform: translateY(0)
+    50%
+        transform: translateY(50px)
+    100%
+        transform: translateY(0)
+
+@keyframes dotesLevitation
+    0%
+        transform: translateY(0)
+    50%
+        transform: translateY(50px)
+    100%
+        transform: translateY(0)

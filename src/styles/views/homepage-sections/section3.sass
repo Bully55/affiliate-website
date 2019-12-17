@@ -1,0 +1,191 @@
+@import "styles/vars"
+
+section.section3
+    font-family: $fonts
+    background: $darkMain
+    padding: 100px 0 160px 0
+    +media(1500px)
+        padding-top: 0
+    +media(480px)
+        padding-bottom: 80px
+
+    div.sect3-h
+        display: inline-block
+        position: relative
+        color: #507afc
+        font-size: 60px
+        font-weight: 300
+        font-family: $fonts
+        span
+            display: inline-block
+            position: relative
+            &:before
+                content: ""
+                position: absolute
+                top: 50%
+                left: 110%
+                background: #507afc
+                width: 130%
+                height: 2px
+                +media(1120px)
+                    display: none
+            &:after
+                content: ""
+                position: absolute
+                top: 50%
+                right: 110%
+                background: #507afc
+                width: 130%
+                height: 2px
+                display: none
+                +media(1500px)
+                    display: inline-block
+                +media(1120px)
+                    display: none
+
+        +media(1500px)
+            display: flex
+            justify-content: center
+
+        +media(768px)
+            font-size: 45px
+
+    div.sect3-content
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 140px
+
+        +media(1366px)
+            margin-top: 80px
+            
+        +media(1120px)
+            margin-top: 40px
+
+    div.sect3-items-head
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 20px 135px
+        background: #375ace
+        min-width: 1440px
+        +media(1450px)
+            min-width: auto
+        +media(1366px)
+            display: none
+
+
+    div.sect3-items-wrap
+        display: flex
+        justify-content: center
+        align-items: flex-start
+        +media(1120px)
+            flex-wrap: wrap
+
+    div.sect3-item
+        background: #2b4bb2
+        color: $textMain
+        padding: 60px 0 35px 0
+        max-width: 535px
+        min-height: 525px
+        margin: 0 90px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: space-between
+        p
+            font-family: $fonts
+            font-size: 16px
+            line-height: 26px
+            margin-bottom: 25px
+            &:last-child
+                margin-bottom: 0
+            +media(1366px)
+                font-size: 15px
+
+        p.sect3-items-h
+            width: 100%
+            justify-content: center
+            font-size: 70px
+            padding: 15px 10px
+            display: none
+            +media(1366px)
+                display: flex
+            +media(768px)
+                align-items: bottom
+                font-size: 50px
+                span
+                    border-bottom: none
+                    font-size: 50px
+            +media(480px)
+                font-size: 35px
+                span
+                    font-size: 35px
+                    margin-left: 10px
+
+        +media(1366px)
+            padding-top: 0
+            max-width: none
+            margin: 0 30px
+
+        +media(1120px)
+            margin: 0 0 60px 0
+            max-width: 70%
+            &:last-child
+                margin-bottom: 0
+
+        +media(768px)
+            max-width: 100%
+
+    div.sect3-item-content
+        padding: 0 35px
+        +media(480px)
+            padding: 0 15px
+
+    p.sect3-items-h
+        color: #f9e428
+        font-size: 74px
+        font-weight: 600
+        line-height: 29px
+        font-family: $fonts
+        display: flex
+        align-items: center
+        background: #375ace
+        span
+            font-family: $fonts
+            display: inline-block
+            font-size: 60px
+            font-weight: 700
+            line-height: 59px
+            color: $textMain
+            border-bottom: 1px solid $textMain
+            margin-left: 25px
+            +media(1366px)
+                font-size: 55px
+            +media(768px)
+                font-size: 40px
+
+    a.sect3-item-btn
+        display: inline-block
+        font-family: $fonts
+        color: $textMain
+        font-size: 22px
+        background: $colorAccent
+        border: 1px solid $colorAccent
+        border-radius: 60px
+        margin-top: 35px
+        margin-left: 35px
+        padding: 20px 60px
+        &:hover
+            background: rgba(0,0,0,0)
+            border-color: $textMain
+
+        +media(768px)
+            margin: 30px auto 0 auto
+
+    div.container
+        width: 100%
+        +media(1750px)
+            padding: 0 15px
+        +media(420px)
+            padding: 0

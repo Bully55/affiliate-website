@@ -1,0 +1,153 @@
+@import "styles/vars"
+
+.section2
+    background-color: $darkMain
+    color: $textMain
+    padding-top: 90px
+    text-align: center
+    +media(768px)
+        padding-top: 50px
+
+    .sect2-head
+        margin-bottom: 40px
+
+        h2
+            position: relative
+            font-size: 60px
+            font-family: $fonts
+            font-weight: 600
+            letter-spacing: 12px
+            line-height: 108px
+            padding-bottom: 55px
+            &::after
+                content: ""
+                position: absolute
+                width: 346px
+                border: 1px solid #f56441
+                bottom: 27px
+                left: 50%
+                transform: translateX(-50%)
+                +media(768px)
+                    width: 50%
+                    bottom: 10px
+            +media(1920px)
+                font-size: 45px
+                padding-bottom: 30px
+            +media(768px)
+                font-size: 40px
+            +media(576px)
+                font-size: 30px
+                line-height: 40px
+            +media(480px)
+                letter-spacing: 2px
+
+        p
+            color: #7494f0
+            font-family: $fonts
+            font-size: 28px
+            font-weight: 300
+            line-height: 55px
+            +media(1920px)
+                font-size: 22px
+                line-height: 35px
+            +media(1750px)
+                padding: 0 40px
+            +media(1366px)
+                font-size: 25px
+                br
+                    display: none
+            +media(768px)
+                font-size: 20px
+                line-height: 30px
+            +media(576px)
+                font-size: 18px
+                line-height: 35px
+                padding: 0 10px
+            +media(480px)
+                font-size: 16px
+                line-height: 25px
+
+    .sect2-content
+        display: flex
+        flex-wrap: wrap
+        padding-bottom: 130px
+        +media(1024px)
+            display: block
+            padding-bottom: 40px
+
+        div.sect2-item
+            position: relative
+            width: 33.33%
+            padding: 50px 40px
+            +media(1366px)
+                padding: 20px 20px
+            +media(1024px)
+                width: 100%
+                max-width: 90%
+                margin: 0 auto
+                padding: 40px
+            +media(576px)
+                max-width: 100%
+                padding: 30px 15px
+            &:nth-child(n+2)
+                border-left: 2px solid #365acd
+                +media(1024px)
+                    border: none
+                &::after
+                    content: ""
+                    position: absolute
+                    width: 6px
+                    height: 264px
+                    background-color: #5680f9
+                    top: 0
+                    left: 0
+                    +media(1024px)
+                        content: none
+
+            img
+                width: 177px
+                margin-bottom: 50px
+                +media(1920px)
+                    max-width: 150px
+                +media(1750px)
+                    width: 150px
+                +media(1366px)
+                    width: 120px
+                +media(1024px)
+                    width: 177px
+                    margin-bottom: 25px
+                +media(768px)
+                    margin-bottom: 10px
+
+            h2
+                margin-bottom: 15px
+                height: 110px
+                font-family: $fonts
+                font-size: 40px
+                font-weight: 700
+                line-height: 53px
+                +media(1920px)
+                    font-size: 33px
+                +media(1750px)
+                    font-size: 31px
+                +media(1366px)
+                    font-size: 27px
+                +media(1024px)
+                    font-size: 40px
+                    height: auto
+                +media(768px)
+                    font-size: 25px
+                    line-height: 35px
+                
+
+            p
+                font-size: 16px
+                font-weight: 400
+                line-height: 34px
+                font-family: $fonts
+                +media(1024px)
+                    font-size: 18px
+                +media(768px)
+                    font-size: 16px
+                    line-height: 25px
+

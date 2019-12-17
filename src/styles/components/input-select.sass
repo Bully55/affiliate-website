@@ -1,0 +1,65 @@
+@import "styles/vars"
+
+div.input-wrap
+    margin-bottom: 20px
+    &.valid
+        div.input-select-wrap
+                border-color: $colorPositive
+    &.invalid
+        div.input-select-wrap
+                border-color: $colorNegative
+
+    span.inp-name
+        display: inline-block
+        font-size: 16px
+        margin-bottom: 5px
+        margin-left: 20px
+
+    input.input-prefix-value
+        visibility: hidden
+        width: 0
+        height: 0
+
+    p.invalid
+        font-size: 12px
+        padding: 0 20px
+        bottom: -20px
+        color: $colorNegative
+
+div.input-select-wrap
+    border: 1px solid $textMain
+    border-radius: 60px
+    min-height: 52px
+    // overflow: hidden
+    display: flex
+    justify-content: flex-start
+
+    div.select-value
+        display: flex
+        width: 20%
+        justify-content: space-around
+        align-items: center
+        padding: 0 5px
+        position: relative
+        .show-list
+            cursor: pointer
+        ul
+            position: absolute
+            list-style: none
+            top: 51px
+            width: 100%
+            z-index: 2
+            background: $colorMain
+            padding: 0 15px
+            border-radius: 20px
+            border: 1px solid #ccc
+            li
+                display: flex
+                justify-content: flex-start
+                align-items: center
+                span
+                    &:first-child
+                        margin-right: 20px
+    
+    input.input
+        flex-grow: 1

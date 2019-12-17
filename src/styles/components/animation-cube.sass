@@ -1,0 +1,69 @@
+@import "styles/vars"
+
+div.animation-cube
+    // padding-left: 350px
+    position: relative
+    margin: 100px 0
+    +media(1600px)
+        display: none
+
+    img.anim-cube-img
+        position: absolute
+
+    img.planet1
+        top: 0
+        right: 0px
+        animation: 4s planet1 infinite
+
+    img.planet2
+        top: 80px
+        right: 100px
+        animation: 3s planet2 infinite
+
+    img.planet3
+        bottom: 20px
+        left: 180px
+        animation: 3s planet1 0.5s infinite
+
+    img.planet4
+        bottom: 100px
+        right: 100px
+        animation: 3s planet2 0.5s infinite
+
+    img.triangle
+        bottom: 200px
+        right: -50px
+        animation: 3s planet2 0.5s infinite
+
+    img.cube
+        top: 280px
+        right: 100px
+        animation: 4s cube 0.5s infinite
+
+    img.lines
+        top: 50%
+        right: 0px
+
+@keyframes planet1
+    0%
+        transform: translateY(0)
+    50%
+        transform: translateY(50px)
+    100%
+        transform: translateY(0)
+
+@keyframes planet2
+    0%
+        transform: translateY(0)
+    50%
+        transform: translateY(30px)
+    100%
+        transform: translateY(0)
+
+@keyframes cube
+    0%
+        transform: translateY(0)
+    50%
+        transform: translateY(-30px)
+    100%
+        transform: translateY(0)

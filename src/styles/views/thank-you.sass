@@ -1,0 +1,101 @@
+@import "styles/vars"
+@import "styles/templates"
+
+.page-thank-you
+    background-color: $colorMain
+    color: $textMain
+    // display: flex
+    overflow: hidden
+
+    .bg-back
+        width: 100%
+        +media($media-medium)
+            width: $media-medium
+            min-height: 740px
+            margin: 0 calc(50% - 677px)
+        +media($media-tablet)
+            width: $media-tablet
+            margin: 0 calc(50% - 512px)
+        +media($media-phone)
+            display: none
+
+    .page-content
+        position: absolute
+        left: 0
+        top: 0
+        bottom: 0
+        right: 0
+        +media($media-phone)
+            position: relative
+
+    .back
+        position: absolute
+        left: 0
+        top: 0
+        right: 0
+
+        .balloon-1
+            position: absolute
+            right: 7.6vw
+            top: 10vw
+            width: 11.5%
+            +media($media-tablet)
+                display: none
+
+        .balloon-2
+            position: absolute
+            width: 9.84vw
+            top: 39.875vw
+            left: 14.5vw
+            width: 7%
+            +media($media-tablet)
+                display: none
+
+    .content
+        margin: 76.5px auto
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        max-width: 654px
+        padding: 53px 94.5px
+        border: 3.76px solid $textMain
+        +media($media-medium)
+            padding: 43px 74.5px
+        +media($media-small)
+            padding: 23px 54.5px
+        +media($media-phone)
+            padding: 23px 34.5px
+        +media($media-tiny)
+            padding: 23px 15px
+            border: 0
+
+    h1
+        @extend %h1
+        white-space: nowrap
+        margin-bottom: 33px
+
+    h3
+        @extend %h3
+        line-height: 1.5
+        max-width: 372px
+        font-weight: 700
+        margin-bottom: 38px
+
+    a
+        &.services
+            @extend %button
+            padding: 21px 45px
+            border: 2px solid $textMain
+            margin-bottom: 30px
+            +media($media-desktop)
+                padding: 18px 40px
+            +media($media-medium)
+                padding: 15px 35px
+            +media($media-tiny)
+                padding: 15px 15px
+        &.home
+            font-size: 18px
+            line-height: 21px
+            color: $colorYellow
+            text-decoration: underline

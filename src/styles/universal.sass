@@ -1,0 +1,38 @@
+@import "styles/vars"
+
+.u-button
+	height: 40px
+	border-radius: 3px
+	padding: 0 20px
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	background: $colorAccent
+	color: white
+	font-weight: 700
+	transition: all 250ms ease-in-out
+	cursor: pointer
+	&:hover
+		opacity: .54
+
+.u-title
+	font-size: 80px
+	font-family: $fonts
+	font-weight: 700
+	+media(1600px)
+		font-size: 40px
+
+.u-sub-title
+	font-size: 28px
+	font-weight: 500
+	line-height: 40px
+	margin-bottom: 30px
+	+media(1600px)
+		font-size: 18px
+		line-height: 30px
+	+media(680px)
+		br
+			display: none
+
+div.u-form-close
+	padding-top: 50px

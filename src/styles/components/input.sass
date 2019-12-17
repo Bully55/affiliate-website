@@ -1,0 +1,53 @@
+@import "styles/vars"
+
+div.input-default
+    margin-bottom: 20px
+    position: relative
+    &.valid
+        div.input-wrap
+            input, select, textarea
+                border-color: $colorPositive
+    &.invalid
+        div.input-wrap
+            input, select, textarea
+                border-color: $colorNegative
+
+    label.inp-name
+        display: inline-block
+        font-size: 16px
+        margin-bottom: 5px
+        margin-left: 20px
+
+    input.input-form
+        width: 100%
+        border: 1px solid $textMain
+        border-radius: 60px
+        padding: 13px 20px
+        font-size: 16px
+        background: rgba(0,0,0,0)
+        &::placeholder
+            color: #5371a2
+
+    img.inp-icon
+        position: absolute
+        z-index: 1
+        bottom: 20px
+        right: 25px
+
+    textarea.textarea
+        resize: none
+        border: 1px solid $textMain
+        border-radius: 25px
+        padding: 13px 20px
+        font-size: 16px
+        width: 100%
+        min-height: 164px
+        &::placeholder
+            color: #5371a2
+
+    p.invalid
+        position: absolute
+        font-size: 12px
+        padding: 0 20px
+        bottom: -20px
+        color: $colorNegative

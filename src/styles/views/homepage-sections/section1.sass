@@ -1,0 +1,140 @@
+@import "styles/vars"
+
+section.section1
+    background-image: url(/static/images/homepage/section1-bg.png)
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: contain
+    background-color: $colorMain
+    color: $textMain
+    padding: 80px 15px 190px 15px
+    +media(1200px)
+        text-align: center
+        padding: 80px 15px 100px 15px
+
+    div.sect1-flex
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    div.sect1-left
+        align-self: flex-end
+        min-width: 960px
+        +media(1920px)
+            min-width: auto
+        +media(1200px)
+            width: 100%
+
+    div.sect1-right
+        padding-left: 20px
+        img
+            animation: 4s cube infinite
+        +media(1200px)
+            display: none
+
+    div.sect1-h
+        font-size: 80px
+        font-weight: 700
+        line-height: 107px
+        text-transform: uppercase
+        font-family: $fonts
+        margin-bottom: 30px
+        +media(1920px)
+            font-size: 55px
+            line-henameight: 67px
+        +media(1400namepx)
+            font-sinameze: 50px
+            line-henameight: 57px
+        +media(992px)
+            font-size: 40px
+        +media(568px)
+            font-size: 33px
+            br
+                display: none
+        +media(480px)
+            font-size: 22px
+            line-height: 35px
+
+    p.sect1-sub-h
+        font-size: 28px
+        font-weight: 300
+        font-family: $fonts
+        border-bottom: 1px solid $textMain
+        margin-right: 40px
+        +media(1920px)
+            font-size: 25px
+        +media(1200px)
+            margin-right: 0
+            padding-bottom: 15px
+        +media(992px)
+            font-size: 22px
+        +media(480px)
+            font-size: 18px
+
+    p.sect1-descr
+        font-size: 28px
+        color: #85a5ff
+        font-family: $fonts
+        margin-top: 20px
+        +media(1920px)
+            font-size: 25px
+        +media(992px)
+            font-size: 22px
+        +media(480px)
+            font-size: 18px
+    
+    div.sect1-btns-wrap
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        margin-top: 140px
+        +media(1200px)
+            justify-content: center
+        +media(992px)
+            margin-top: 60px
+        +media(568px)
+            flex-direction: column
+
+    a.sect1-btn
+        display: inline-block
+        color: $textMain
+        border-radius: 60px
+        border: 1px solid $textMain
+        font-size: 32px
+        font-family: $fonts
+        padding: 25px 65px
+        font-family: $fonts
+        margin-right: 50px
+        &:hover
+            background: $colorAccent
+            border-color: $colorAccent
+        &:last-child
+            margin-right: 0
+        &:first-child
+            margin-top: 0
+        +media(1920px)
+            font-size: 22px
+        +media(992px)
+            font-size: 18px
+        +media(568px)
+            margin-right: 0
+            margin-top: 30px
+            padding: 15px 0
+            min-width: 280px
+        +media(480px)
+            width: 100%
+
+
+    img.sect1-cube
+        max-width: 800px
+        max-height: 731px
+        +media(1920px)
+            max-width: 630px
+            width: 100%
+
+
+    @keyframes cube
+        0%
+            transform: translateY(0)
+        100%
+            transform: translateY(-100px)

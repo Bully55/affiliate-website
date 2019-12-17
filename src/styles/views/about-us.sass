@@ -1,0 +1,85 @@
+@import "styles/vars"
+@import "styles/templates"
+
+.page-about-us
+    background-color: $colorMain
+    color: $textMain
+
+    .flex-wrapper
+        display: flex
+        align-items: center
+        margin: 60px auto 175px
+        position: relative
+        +media($media-medium)
+            margin: 60px auto 100px
+        +media($media-tablet)
+            flex-direction: column
+            margin: 30px auto 60px
+
+        > div
+            width: 50%
+            +media($media-tablet)
+                width: auto
+        
+        .left
+            position: relative
+            padding-bottom: 40px
+            +media($media-tablet)
+                position: absolute
+                top: 0
+                left: 50%
+                right: -5%
+                width: auto
+                opacity: 0.5
+            +media($media-small)
+                top: auto
+                bottom: -50px
+            +media(480px)
+                left: 0
+                width: 100%
+
+            img
+                &.main
+                    position: relative
+                    bottom: 6%
+                    left: 7.3%
+                    width: 96.8%
+                    z-index: 1
+                    +media(480px)
+                        left: 0
+                &.dot-1
+                    position: absolute
+                    right: 15.8%
+                    bottom: 0
+                    width: 25.73%
+                &.dot-2
+                    position: absolute
+                    right: 63.4%
+                    width: 8.78%
+                    +media($media-small)
+                        display: none
+        
+        .right
+            padding: 133px 10px
+            z-index: 1
+            +media($media-medium)
+                padding: 30px 10px
+            +media($media-small)
+                padding-bottom: 120px
+            +media($media-phone)
+                padding-bottom: 60px
+
+    h1
+        @extend %h1
+        line-height: 1
+        margin-bottom: 34.5px
+        max-width: 629px
+        +media(480px)
+            font-size: 27px
+
+    p
+        @extend %p
+        max-width: 608px
+
+        span
+            color: $colorYellow

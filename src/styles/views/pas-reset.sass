@@ -1,0 +1,95 @@
+@import "styles/vars"
+
+main.v-pas-reset
+    background: $colorMain
+    color: $textMain
+
+    div.u-form-close
+        +media(1600px)
+            max-width: 620px
+            margin: 0 auto
+        +media(680px)
+            max-width: none
+            width: 100%
+            padding: 50px 15px 0 15px
+    
+    div.animation-cube-wrap
+        padding-left: 200px
+        +media(1600px)
+            display: none
+
+    div.pass-flex
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        padding: 0 15px 50px 15px
+        +media(1600px)
+            justify-content: center
+
+    div.pass-left
+        min-width: 770px
+        +media(1600px)
+            min-width: 624px
+        +media(680px)
+            width: 100%
+            min-width: auto
+
+    form.pass-form
+        max-width: 625px
+        +media(680px)
+            width: 100%
+            max-width: none
+
+    div.pass-form-bottom
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-top: 15px
+        +media(568px)
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            padding-top: 20px
+
+    p.pass-bot-left
+        font-size: 16px
+        color: #99b2db
+        padding-left: 20px
+        a
+            display: flex
+            align-items: center
+            font-weight: 600
+            color: $colorAccent
+        img
+            margin-right: 10px
+        +media(568px)
+            padding-left: 0
+
+    button.pass-form-btn
+        color: $textMain
+        text-align: center
+        min-width: 220px
+        border-radius: 60px
+        padding: 20px 10px
+        font-size: 22px
+        cursor: pointer
+        border: 1px solid $colorAccent
+        background: $colorAccent
+        margin-left: 50px
+        &:hover
+            background: rgba(0,0,0,0)
+            border-color: $textMain
+        +media(1600px)
+            min-width: 180px
+            font-size: 18px
+            padding: 15px 10px
+        +media(568px)
+            margin-left: 0
+            margin-top: 30px
+
+    div.u-title
+        +media(568px)
+            font-size: 35px
+    div.u-sub-title
+        +media(568px)
+            font-size: 16px

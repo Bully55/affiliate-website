@@ -1,0 +1,259 @@
+@import "styles/vars"
+
+section.section4
+    background-color: $colorMain
+    color: $textMain
+    padding-top: 100px
+    text-align: center
+    +media(1366px)
+        padding-top: 50px
+    +media(768px)
+        padding-top: 40px
+
+    div.sect4-head
+        margin-bottom: 165px
+        padding: 0 20px
+        +media(1366px)
+            padding: 0 40px
+        +media(1024px)
+            padding: 0 40px
+        +media(768px)
+            padding: 0 20px
+            margin-bottom: 40px
+        +media(576px)
+            padding: 0 10px
+
+        h2
+            position: relative
+            font-family: $fonts
+            padding-bottom: 55px
+            font-size: 60px
+            font-weight: 600
+            letter-spacing: 12px
+            line-height: 108px
+            &::after
+                content: ""
+                position: absolute
+                width: 346px
+                border: 1px solid #f56441
+                bottom: 27px
+                left: 50%
+                transform: translateX(-50%)
+                +media(576px)
+                    width: 70%
+            +media(1920px)
+                font-size: 35px
+                line-height: 80px
+            +media(1024px)
+                font-size: 55px
+                line-height: 80px
+            +media(768px)
+                font-size: 40px
+                line-height: 60px
+                letter-spacing: 2px
+            +media(576px)
+                font-size: 30px
+                line-height: 40px
+            +media(480px)
+                font-size: 29px
+
+        p
+            font-family: $fonts
+            font-size: 28px
+            font-weight: 300
+            line-height: 55px
+            +media(1920px)
+                font-size: 23px
+                line-height: 40px
+            +media(1024px)
+                font-size: 25px
+                line-height: 50px
+            +media(768px)
+                font-size: 20px
+                line-height: 40px
+            +media(576px)
+                font-size: 16px
+                line-height: 30px            
+
+    div.sect4-content
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        padding-bottom: 240px
+        +media(1920px)
+            padding-bottom: 140px
+        +media(1366px)
+            display: block
+        +media(1024px)
+            padding-bottom: 20px
+        
+
+        div.content-left,
+        div.content-right
+            padding: 0 10px
+
+        div.content-left
+            position: relative
+            max-height: 420px
+            width: 830px
+            +media(1920px)
+                width: 730px
+            +media(1750px)
+                margin-left: 0
+            +media(1366px)
+                margin: 140px auto
+            +media(768px)
+                width: 100%
+                margin: 100px auto
+
+
+            img
+                +media(768px)
+                    width: 100%
+
+            div.content-photos
+                >*
+                    position: absolute
+
+                img.first
+                    left: 85px
+                    top: -30px
+                    max-width: 140px
+                    border-radius: 83px
+                    +media(768px)
+                        width: 120px
+                        left: 11%
+                        top: -6%
+                    +media(576px)
+                        width: 65px
+
+                img.second
+                    right: 90px
+                    top: -80px
+                    max-width: 150px
+                    border-radius: 83px
+                    +media(768px)
+                        width: 140px
+                        right: 11%
+                        top: -25%
+                    +media(576px)
+                        width: 75px
+
+                img.third
+                    right: 300px
+                    top: 60px
+                    width: 100px
+                    +media(768px)
+                        width: 100px
+                        right: 45%
+                        top: 16%
+                    +media(576px)
+                        width: 55px
+                    +media(420px)
+                        display: none
+
+                img.fourth
+                    left: 180px
+                    bottom: 100px
+                    width: 100px
+                    +media(768px)
+                        width: 80px
+                        left: 24%
+                        bottom: 23%
+                    +media(576px)
+                        width: 55px
+                    +media(420px)
+                        left: 30%
+                        bottom: 5%
+
+                img.fifth
+                    left: 280px
+                    bottom: -77px
+                    width: 135px
+                    +media(768px)
+                        width: 140px
+                        left: 40%
+                        bottom: -25%
+                    +media(576px)
+                        width: 75px
+                        bottom: -10%
+                    +media(420px)
+                        display: none
+
+                img.sixth
+                    right: 120px
+                    bottom: -20px
+                    width: 130px
+                    +media(768px)
+                        width: 120px
+                        right: 11%
+                        bottom: -2%
+                    +media(576px)
+                        width: 65px
+        img.sect4-map
+            width: 100%
+
+        div.content-right
+            width: 50%
+            +media(1750px)
+                max-width: 38%
+            +media(1366px)
+                margin: 0 auto
+                width: 100%
+                max-width: 90%
+            +media(768px)
+                max-width: 100%
+
+            p.comment
+                font-family: $fonts
+                font-size: 28px
+                font-weight: 300
+                line-height: 55px
+                padding-bottom: 55px
+                +media(1920px)
+                    font-size: 23px
+                    line-height: 40px
+                +media(1024px)
+                    font-size: 25px
+                    line-height: 50px
+                    padding-bottom: 35px
+                +media(768px)
+                    font-size: 20px
+                    line-height: 40px
+                +media(576px)
+                    padding-bottom: 10px
+                    font-size: 16px
+                    line-height: 30px 
+
+            p.comment-author
+                text-align: end
+                font-family: $fonts
+                font-size: 22px
+                font-weight: 300
+                line-height: 44px
+                color: #507afc
+                +media(1920px)
+                    font-size: 20px
+                +media(768px)
+                    font-size: 18px
+                    line-height: 30px
+                +media(576px)
+                    font-size: 15px
+                    line-height: 25px     
+                    text-align: center           
+            
+                span.name
+                    color: #fae331
+                    font-size: 30px
+                    font-weight: 500
+                    +media(1920px)
+                        font-size: 28px
+                    +media(768px)
+                        font-size: 25px
+                    +media(576px)
+                        font-size: 22px
+                
+
+
+
+                
